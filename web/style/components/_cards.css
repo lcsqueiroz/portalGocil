@@ -14,7 +14,7 @@
 .course-card__meta {
   display: flex;
   align-items: center;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-md);
   font-size: var(--font-size-sm);
   color: #dadef2;
 }
@@ -38,7 +38,7 @@
 }
 
 .course-card__footer {
-  margin-top: var(--spacing-md);
+  padding-top: var(--spacing-md);
 }
 
 .course-card__tag-label {
@@ -50,7 +50,9 @@
 .course-card__tags {
   margin-top: var(--spacing-xs);
   display: flex;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
 }
 
 /* Card de Sistemas */

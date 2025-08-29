@@ -75,3 +75,9 @@
   font-weight: normal;
   line-height: 1.5;
 }
+.background {
+  background-image: url(/web/img/systems/LockScreen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--spacing-2xl);
+  gap: var(--spacing-3xl);
   padding-top: var(--spacing-5xl);
   padding-bottom: var(--spacing-5xl);
 }
