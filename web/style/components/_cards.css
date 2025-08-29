@@ -1,0 +1,178 @@
+.course-card {
+  background-color: rgba(53, 111, 171, 0.25);
+  padding: var(--spacing-lg);
+  border-radius: 20px;
+  width: 600px;
+}
+
+.course-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+  color: #dadef2;
+}
+
+.course-card__body {
+  margin-top: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.course-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--color-text-title);
+}
+
+.course-card__description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-title);
+}
+
+.course-card__footer {
+  margin-top: var(--spacing-md);
+}
+
+.course-card__tag-label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-title);
+}
+
+.course-card__tags {
+  margin-top: var(--spacing-xs);
+  display: flex;
+  gap: var(--spacing-xl);
+}
+
+/* Card de Sistemas */
+.system-card {
+  background-color: rgba(53, 111, 171, 0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  transition: background-color 0.3s ease;
+  padding: var(--spacing-lg);
+}
+
+.system-card:hover {
+  background-color: rgba(128, 183, 241, 0.4);
+}
+
+.system-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.system-card__header img {
+  height: 50px;
+}
+
+.system-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.system-card__title {
+  color: var(--color-text-title);
+  font-weight: 900;
+  font-size: var(--font-size-lg);
+}
+
+.system-card__description {
+  color: var(--color-text-title);
+}
+
+.system-card__button {
+  padding: var(--spacing-xs) var(--spacing-lg);
+  background-color: var(--color-text-contrast);
+  color: var(--color-text-dark);
+  text-align: center;
+  border-radius: 5px;
+  margin-top: auto; /* Empurra o botão para o final do card */
+  display: block;
+}
+
+/* Card de Contato e Ramal */
+.ramal-card {
+  background: var(--gradient-background-button-yellow);
+  min-width: 430px;
+  padding: var(--spacing-lg);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.ramal-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: #0b0a0a;
+}
+
+.ramal-card__description {
+  color: #232323;
+}
+
+.ramal-card__button {
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  background-color: #1b1b1b;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.info-card {
+  width: 400px;
+  border-radius: 7px;
+  background-color: rgba(217, 217, 217, 0.1);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-lg);
+}
+
+.info-card__header {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+.info-card__header img {
+  height: 30px;
+}
+
+.info-card__title {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--color-text-title);
+}
+
+.info-card__content {
+  font-size: 0.875rem; /* 14px */
+  color: var(--color-text-title);
+  font-style: normal;
+}
+
+.info-card__content--highlight {
+  color: var(--color-text-contrast);
+}
+
+.info-card__contact-line {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}

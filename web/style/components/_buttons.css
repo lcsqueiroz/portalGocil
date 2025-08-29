@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  padding: var(--spacing-md) var(--spacing-xl);
+  border-radius: 5px;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: var(--shadow-primary);
+  border: 0.063rem solid transparent;
+}
+
+.button--primary {
+  background: var(--gradient-background-button-yellow);
+  border-color: var(--border-color-button-yellow);
+  color: var(--color-text-dark);
+}
+
+.button--secondary {
+  background: var(--gradient-background-button-white);
+  border-color: var(--border-color-button-white);
+  color: var(--color-text-dark);
+}

@@ -1,0 +1,49 @@
+.university {
+  background-color: var(--color-background-section-university);
+}
+
+.university__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-2xl);
+  padding-top: var(--spacing-5xl);
+  padding-bottom: var(--spacing-5xl);
+}
+
+.university__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+  align-items: flex-end;
+  text-align: end;
+}
+
+.university__title {
+  font-size: var(--font-size-title);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-text-title);
+}
+
+.university__title--highlight {
+  color: var(--color-text-contrast);
+}
+
+.university__description {
+  font-size: var(--font-size-lg);
+  line-height: 1.5;
+  max-width: 60ch;
+  color: var(--color-text-title);
+}
+
+.university__content .button {
+  align-self: flex-end;
+  margin-top: var(--spacing-md);
+}
+
+.university__course-deck {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+}
