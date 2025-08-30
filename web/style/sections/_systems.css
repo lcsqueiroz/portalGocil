@@ -17,8 +17,9 @@
 
 .systems__title {
   font-size: var(--font-size-title);
-  text-transform: uppercase;
-  font-weight: 900;
+  text-transform: var(--title-text-transform);
+  font-weight: var(--font-weight-title);
+  line-height: var(--font-line-lg);
   color: var(--color-text-title);
 }
 
@@ -28,13 +29,13 @@
 
 .systems__subtitle {
   font-size: var(--font-size-lg);
-  line-height: 1.3;
+  line-height: var(--font-line-heigth-xl);
   color: var(--color-text-title);
 }
 
 .systems__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Grid responsivo */
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--spacing-xl);
   justify-content: center;
   max-width: 1040px; /* (500px * 2) + 40px gap */

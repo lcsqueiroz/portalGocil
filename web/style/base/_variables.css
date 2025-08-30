@@ -2,6 +2,7 @@
   /* Adicione aqui os seus Design Tokens que já criamos */
   --color-text-title: #e7e9ed;
   --color-text-body-primary: #e5e5e5;
+  --color-text-body-secondary: #dadef2;
   --color-text-contrast: #ffc60a;
   --color-text-dark: #272727;
   --color-text-footer: #bfbfbf;
@@ -10,8 +11,13 @@
   --color-background-section-contact: #0b111e;
   --color-background-footer: #0b0a0a;
   --color-background-header: #f5f6fa;
+  --color-background-ramal-button: #1b1b1b;
+
   --color-background-card-services: rgba(53, 111, 171, 0.25);
   --color-background-card-services-hover: rgba(128, 183, 241, 0.4);
+
+  --color-background-card-contact: rgba(217, 217, 217, 0.1);
+  --color-background-card-contact-hover: rgba(217, 217, 217, 0.197);
 
   --gradient-background-button-yellow: linear-gradient(
     180deg,
@@ -31,11 +37,35 @@
 
   --font-family-base: "Roboto", sans-serif;
   --font-size-hero: 9.375rem;
-  --font-size-title: 5rem;
-  --font-size-lg: 1.25rem;
-  --font-size-md: 1rem;
-  --font-size-sm: 0.75rem;
+  --font-size-title: 5rem; /*Padrão de títulos*/
+  --font-size-lg: 1.25rem; /*Padrão de títulos em card*/
+  --font-size-md: 1rem; /*Padrão de texto*/
+  --font-size-sm: 0.75rem; /*Informações secundárias*/
+  --font-size-xs: 0.875rem; /*14px*/
+  --font-size-footer-title: 1.875rem;
 
+  /*Estilos e espaçamentos de fontes*/
+
+  --font-weight-title: 900; /*Padrão Títulos*/
+  --font-weight-bold: bold; /*Padrão para títulose secundários*/
+  --font-weight-medium: 500;
+  --font-weight-normal: normal;
+
+  --font-line-height-sm: 0.8; /*Title Hero-Section*/
+  --font-line-height-md: 0.9;
+  --font-line-height-lg: 1; /*Padrão para Títulos*/
+  --font-line-heigth-xl: 1.5; /*Padrão para corpo de texto*/
+
+  --font-width-primary: 60ch;
+  --title-text-transform: uppercase;
+
+  /*Bordas*/
+
+  --border-xs: 0.313rem; /*usando na aba de sistemas*/
+  --border-sm: 0.625rem;
+  --border-lg: 1.25rem; /*Padrão para Botões*/
+
+  --spacing-xs: 0.313rem;
   --spacing-sm: 0.75rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
@@ -43,4 +73,8 @@
   --spacing-3xl: 3.25rem;
   --spacing-4xl: 5rem;
   --spacing-5xl: 6.25rem;
+
+  /*Tamanho para ícones*/
+  --icon-heigth-sm: 1.563rem;
+  --icon-heigth-md: 3.125rem;
 }

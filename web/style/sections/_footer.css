@@ -25,28 +25,28 @@
 }
 
 .footer__logo img {
-  height: 50px;
+  height: var(--icon-heigth-md);
 }
 
 .footer__logo-text {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: var(--spacing-xs);
 }
 
 .footer__logo-text h4 {
-  font-size: 1.875rem; /* 30px */
+  font-size: var(--font-size-footer-title); /* 30px */
   color: var(--color-text-title);
-  font-weight: bold;
+  font-weight: var(--font-weight-bold);
 }
 
 .footer__logo-text span {
-  font-size: 0.875rem; /* 14px */
+  font-size: var(--font-size-xs);
 }
 
 .footer__description {
-  line-height: 1.5;
-  max-width: 60ch;
+  line-height: var(--font-line-height-xl);
+  max-width: var(--font-width-primary);
 }
 
 .footer__nav {
@@ -57,9 +57,9 @@
 }
 
 .footer__nav-title {
-  font-size: 0.875rem; /* 14px */
+  font-size: var(--font-size-xs); /* 14px */
   color: var(--color-text-title);
-  font-weight: 500;
+  font-weight: var(--font-weight-medium);
 }
 
 .footer__nav-list {

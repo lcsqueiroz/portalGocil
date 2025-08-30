@@ -20,7 +20,8 @@
 
 .contact__title {
   font-size: var(--font-size-title);
-  font-weight: 900;
+  font-weight: var(--font-weight-title);
+  line-height: var(--font-line-lg);
   color: var(--color-text-title);
 }
 
@@ -29,7 +30,7 @@
 }
 
 .contact__subtitle {
-  max-width: 50ch;
+  max-width: var(--font-width-primary);
   color: var(--color-text-title);
   font-size: var(--font-size-lg);
 }
