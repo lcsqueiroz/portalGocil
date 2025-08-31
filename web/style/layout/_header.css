@@ -11,7 +11,7 @@
 }
 
 .header__logo img {
-  height: var(--icon-height-header);
+  height: var(--header-logo-height);
 }
 
 .header__nav-list {
@@ -23,13 +23,13 @@
   padding: var(--spacing-xs) var(--spacing-lg);
   color: var(--color-text-dark);
   font-weight: var(--font-weight-normal);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   border: 1px solid transparent;
   border-radius: var(--border-radius-pill);
-  transition: initial;
+  transition: all 0.3s ease;
 }
 
 .header__nav-item a:hover {
-  transition: 1s;
-  border: 1px solid var(--color-background-tag);
+  background-color: var(--color-background-nav-hover);
+  border-color: var(--color-border-nav-hover);
 }

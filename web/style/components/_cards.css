@@ -25,6 +25,7 @@
   color: var(--color-text-title);
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
 }
 
 .service-card__description {
@@ -79,7 +80,7 @@
 
 .course-card__description {
   font-size: var(--font-size-xs);
-  max-width: var(--font-width-primary);
+  max-width: var(--max-width-text);
   color: var(--color-text-body-primary);
 }
 
@@ -105,7 +106,7 @@
   border-radius: var(--border-radius-md);
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-lg);
   transition: background-color 0.3s ease;
   padding: var(--spacing-lg);
 }
@@ -127,18 +128,19 @@
 .system-card__info {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-xxs);
 }
 
 .system-card__title {
   color: var(--color-text-title);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-lg);
+  text-transform: uppercase;
 }
 
 .system-card__description {
   color: var(--color-text-body-secondary);
-  max-width: var(--font-width-primary);
+  max-width: var(--max-width-text);
   font-size: var(--font-size-sm);
 }
 
@@ -148,14 +150,15 @@
   color: var(--color-text-dark);
   text-align: center;
   border-radius: var(--border-radius-sm);
-  margin-top: auto; /* Empurra o botão para o final do card */
+  margin-top: auto;
   display: block;
-  font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-normal);
+  box-shadow: var(--shadow-primary);
   transition: transform 0.2s ease-in-out;
 }
 
 .system-card__button:hover {
-  transform: scale(1.05);
+  transform: var(--button-hover-animation);
 }
 
 /* Card de Ramal */
@@ -175,12 +178,13 @@
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-dark);
+  text-transform: uppercase;
 }
 
 .ramal-card__description {
   color: var(--color-text-dark-secondary);
   font-size: var(--font-size-md);
-  max-width: var(--font-width-primary);
+  max-width: var(--max-width-text);
 }
 
 .ramal-card__button {
@@ -195,7 +199,7 @@
 }
 
 .ramal-card__button:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 /* Card de Informações (Contato) */
@@ -211,7 +215,7 @@
 
 .info-card__header {
   display: flex;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-xs);
   align-items: center;
 }
 
@@ -223,12 +227,16 @@
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-bold);
   color: var(--color-text-title);
+  text-transform: uppercase;
 }
 
 .info-card__content {
+  gap: var(--spacing-xxs);
   font-size: var(--font-size-sm);
   color: var(--color-text-body-secondary);
   font-style: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .info-card__content--highlight {

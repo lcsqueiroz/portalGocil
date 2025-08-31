@@ -6,11 +6,12 @@
   font-weight: var(--font-weight-normal);
   box-shadow: var(--shadow-primary);
   border: 1px solid transparent;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .button:hover {
-  transform: scale(1.02);
+  transform: var(--button-hover-animation);
 }
 
 .button--primary {

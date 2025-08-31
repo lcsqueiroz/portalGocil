@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(../../img/systems/LockScreen.jpg);
+  background-image: url(../../assets/images/backgrounds/hero-background.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@
 .hero__subtitle {
   font-size: var(--font-size-lg);
   line-height: var(--font-line-height-lg);
-  max-width: var(--font-width-primary);
+  max-width: var(--max-width-text);
   color: var(--color-text-title);
 }
 

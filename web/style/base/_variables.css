@@ -12,10 +12,13 @@
   --color-text-body-secondary: #dadef2; /* Cor para textos secundários e descrições */
   --color-text-contrast: #ffc60a; /* Cor de destaque (amarelo), usada em títulos e tags */
   --color-text-dark: #1b1b1b; /* Cor de texto escura para usar sobre fundos claros (botões, header) */
+  --color-text-dark-secondary: #232323; /* Variação de texto escuro para o card de ramais */
   --color-text-footer: #bfbfbf; /* Cor de texto específica para o rodapé */
 
   /* Cores de Fundo */
+  --color-background-body: #003871; /* Cor de fundo principal da página */
   --color-background-header: #f5f6fa; /* Cor de fundo do header */
+  --color-background-nav-hover: #fafdff; /* Cor do link da navegação no estado hover */
   --color-background-section-university: #001d3b; /* Fundo da seção Universidade */
   --color-background-section-contact: #0b111e; /* Fundo da seção de Contato */
   --color-background-footer: #0b0a0a; /* Fundo do rodapé */
@@ -40,7 +43,7 @@
   --color-background-ramal-button: #1b1b1b; /* Fundo do botão dentro do card de ramal */
   --color-background-tag: #5c594e; /* Fundo das tags de departamento */
 
-  /* Gradientes */
+  /* Gradientes e animações */
   --gradient-background-button-yellow: linear-gradient(
     180deg,
     rgb(255, 198, 10) 0%,
@@ -51,10 +54,12 @@
     rgb(245, 246, 250) 0%,
     rgb(231, 233, 237) 100%
   );
+  --button-hover-animation: scale(1.01);
 
   /* Bordas */
   --color-border-button-yellow: #ca9b00; /* Cor da borda para botões primários */
   --color-border-button-white: #b8bed0; /* Cor da borda para botões secundários */
+  --color-border-nav-hover: #e7e9ed; /* Cor da borda do link da navegação no estado hover */
   --color-border-divider: #333; /* Cor para linhas divisórias, como no rodapé */
 
   /* ==============================================
@@ -92,7 +97,7 @@
   --font-line-height-lg: 1.5; /* Altura de linha padrão para parágrafos */
 
   /* Outras Propriedades */
-  --font-width-primary: 60ch; /* Largura máxima ideal para parágrafos, para melhor legibilidade */
+  --max-width-text: 60ch; /* Largura máxima ideal para parágrafos, para melhor legibilidade */
   --title-text-transform: uppercase; /* Transformação de texto para títulos */
 
   /* ==============================================
@@ -115,10 +120,14 @@
     ==============================================
   */
   --layout-width-max: 1440px; /* Largura máxima do container principal (.max-content) */
-  --icon-height-header: 4.375rem; /* Altura da imagem do logo no cabeçalho */
-  --icon-height-md: 3.125rem; /* 50px - Ícones médios (ex: cards de sistema) */
-  --icon-height-sm: 1.563rem; /* 25px - Ícones pequenos (ex: cards de contato) */
+  --layout-width-grid-systems: 1040px; /* Largura do grid de sistemas */
+  --header-logo-height: 70px; /* Altura da imagem do logo no cabeçalho */
+  --icon-height-md: 3.125rem; /* 50px - Ícones médios (ex: cards de sistema, logo do footer) */
+  --icon-height-sm: 1.563rem; /* 25px - Ícones pequenos (ex: cards de contato e curso) */
+  --card-height-service: 250px; /* Altura dos cards de serviço */
+  --card-width-service: 300px; /* Largura dos cards de serviço */
   --card-width-course: 600px; /* Largura dos cards de curso */
+  --card-width-ramal: 430px; /* Largura do card de ramal */
   --card-width-info: 400px; /* Largura dos cards de informação (contato) */
 
   /* ==============================================

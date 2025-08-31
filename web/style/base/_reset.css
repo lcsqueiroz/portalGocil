@@ -6,21 +6,26 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
+
 ul,
 ol {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 img,
 picture,
 video,
@@ -29,12 +34,14 @@ svg {
   display: block;
   max-width: 100%;
 }
+
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
+
 p,
 h1,
 h2,
@@ -52,6 +59,6 @@ h6 {
 
 /* Mantém o anel de foco para usuários de teclado */
 :focus-visible {
-  outline: 2px solid var(--color-text-contrast); /* Exemplo usando sua cor de contraste */
+  outline: 2px solid var(--color-text-contrast);
   outline-offset: 2px;
 }

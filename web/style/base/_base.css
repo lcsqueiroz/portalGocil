@@ -4,5 +4,5 @@ body {
   font-size: var(--font-size-md);
   text-decoration: none;
   color: var(--color-text-body-primary);
-  background-color: var(--color-background-section-university);
+  background-color: var(--color-background-body);
 }
