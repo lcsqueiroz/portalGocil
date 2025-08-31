@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="scroll-behavior: smooth;">
 
 <head>
   <!-- =================================================================== -->
@@ -44,69 +44,69 @@
 <body>
   <header class="header">
     <div class="header__container max-content">
-      <a href="#" class="header__logo">
-        <img src="assets/images/logos/gocil-logo-main.png" alt="Logomarca da empresa GOCIL">
+      <a href="/" class="header__logo">
+        <img src="assets/images/logos/gocil-logo-main.png" alt="Logomarca da empresa GOCIL" width="220" height="70">
       </a>
-      <nav class="header__nav">
+      <nav class="header__nav" aria-label="Navegação Principal">
         <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#">Comunicados</a></li>
-          <li class="header__nav-item"><a href="#">Sistemas</a></li>
-          <li class="header__nav-item"><a href="#">Listas de Ramais</a></li>
+          <li class="header__nav-item"><a href="#sistemas">Sistemas</a></li>
+          <li class="header__nav-item"><a href="#contato">Listas de Ramais</a></li>
           <li class="header__nav-item"><a href="#">Políticas Gocil</a></li>
           <li class="header__nav-item"><a href="#">Calendário de Pagamento</a></li>
-          <li class="header__nav-item"><a href="#">Contato</a></li>
+          <li class="header__nav-item"><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
       <div class="hero__container max-content">
-        <h1 class="hero__title">Portal <span class="hero__title--highlight">Gocil</span></h1>
+        <h1 class="hero__title" id="hero-title">Portal <span class="hero__title--highlight">Gocil</span></h1>
         <p class="hero__subtitle">Tecnologia em Segurança e Multisserviços. Acesse nossos Sistemas, comunicados e recursos com facilidade e segurança.</p>
         <div class="hero__actions">
-          <a class="button button--primary" href="#">Acessar Sistemas</a>
+          <a class="button button--primary" href="#sistemas">Acessar Sistemas</a>
           <a class="button button--secondary" href="#">Ver Comunicados</a>
         </div>
         <div class="hero__services-grid">
-          <article class="service-card">
-            <img class="service-card__icon" src="assets/images/icons/shield.svg" alt="">
-            <h2 class="service-card__title">Segurança</h2>
+          <article class="service-card" aria-labelledby="service-title-seguranca">
+            <img class="service-card__icon" src="assets/images/icons/shield.svg" alt="" width="50" height="50">
+            <h2 class="service-card__title" id="service-title-seguranca">Segurança</h2>
             <p class="service-card__description">Soluções completas em segurança patrimonial e pessoal.</p>
           </article>
-          <article class="service-card">
-            <img class="service-card__icon" src="assets/images/icons/multiservices.svg" alt="">
-            <h2 class="service-card__title">Multisserviços</h2>
+          <article class="service-card" aria-labelledby="service-title-multi">
+            <img class="service-card__icon" src="assets/images/icons/multiservices.svg" alt="" width="50" height="50">
+            <h2 class="service-card__title" id="service-title-multi">Multisserviços</h2>
             <p class="service-card__description">Ampla gama de serviços especializados.</p>
           </article>
-          <article class="service-card">
-            <img class="service-card__icon" src="assets/images/icons/technology.svg" alt="">
-            <h2 class="service-card__title">Tecnologia</h2>
+          <article class="service-card" aria-labelledby="service-title-tech">
+            <img class="service-card__icon" src="assets/images/icons/technology.svg" alt="" width="50" height="50">
+            <h2 class="service-card__title" id="service-title-tech">Tecnologia</h2>
             <p class="service-card__description">Sistemas integrados e modernos.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="university">
+    <section class="university" id="universidade" aria-labelledby="university-title">
       <div class="university__container max-content">
         <div class="university__content">
-          <h2 class="university__title">Universidade <span class="university__title--highlight">Corporativa</span></h2>
+          <h2 class="university__title" id="university-title">Universidade <span class="university__title--highlight">Corporativa</span></h2>
           <p class="university__description">Faça o seu cadastro na Universidade GOCIL! Participe de treinamentos exclusivos para quem é GOCIL! Agora é aproveitar essa opção de desenvolvimento que oferecemos para você.</p>
           <a href="#" class="button button--primary">Saiba mais</a>
         </div>
         <div class="university__course-deck">
-          <article class="course-card">
+          <article class="course-card" aria-labelledby="course-title-1">
             <header class="course-card__header">
               <div class="course-card__meta">
-                <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="">
+                <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="" width="25" height="25">
                 <span>Último lançamento</span>
               </div>
               <time class="course-card__time" datetime="2025-08">Ago/2025</time>
             </header>
             <div class="course-card__body">
-              <h3 class="course-card__title">Introdução à Segurança da Informação</h3>
+              <h3 class="course-card__title" id="course-title-1">Introdução à Segurança da Informação</h3>
               <p class="course-card__description">Curso focado na área de prevenção e proteção de tecnologia aplicada à segurança.</p>
             </div>
             <footer class="course-card__footer">
@@ -117,23 +117,23 @@
               </div>
             </footer>
           </article>
-          <article class="course-card">
+          <article class="course-card" aria-labelledby="course-title-2">
             <header class="course-card__header">
               <div class="course-card__meta">
-                <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="">
+                <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="" width="25" height="25">
                 <span>Último lançamento</span>
               </div>
               <time class="course-card__time" datetime="2025-08">Ago/2025</time>
             </header>
             <div class="course-card__body">
-              <h3 class="course-card__title">Introdução à Segurança da Informação</h3>
-              <p class="course-card__description">Curso focado na área de prevenção e proteção de tecnologia aplicada à segurança.</p>
+              <h3 class="course-card__title" id="course-title-2">Liderança e Gestão de Equipes</h3>
+              <p class="course-card__description">Desenvolva habilidades essenciais para liderar equipes de alta performance com foco em resultados.</p>
             </div>
             <footer class="course-card__footer">
               <span class="course-card__tag-label">Departamento Obrigatório</span>
               <div class="course-card__tags">
-                <span class="tag">Financeiro</span>
-                <span class="tag">Operacional</span>
+                <span class="tag">Gestão</span>
+                <span class="tag">RH</span>
               </div>
             </footer>
           </article>
@@ -141,48 +141,48 @@
       </div>
     </section>
 
-    <section class="systems">
+    <section class="systems" id="sistemas" aria-labelledby="systems-title">
       <div class="systems__container max-content">
         <header class="systems__header">
-          <h2 class="systems__title">Sistemas <span class="systems__title--highlight">Gocil</span></h2>
+          <h2 class="systems__title" id="systems-title">Sistemas <span class="systems__title--highlight">Gocil</span></h2>
           <p class="systems__subtitle">Acesse nossos sistemas integrados para otimizar seu trabalho e aumentar a produtividade.</p>
         </header>
         <div class="systems__grid">
-          <article class="system-card">
+          <article class="system-card" aria-labelledby="system-title-glpi">
             <header class="system-card__header">
-              <img src="assets/images/icons/glpi.svg" alt="">
+              <img src="assets/images/icons/glpi.svg" alt="" width="50" height="50">
               <div class="system-card__info">
-                <h3 class="system-card__title">GLPI</h3>
+                <h3 class="system-card__title" id="system-title-glpi">GLPI</h3>
                 <p class="system-card__description">Sistema de chamados GLPI - Manual de utilização</p>
               </div>
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema GLPI">Acessar Sistema</a>
           </article>
-          <article class="system-card">
+          <article class="system-card" aria-labelledby="system-title-nexti">
             <header class="system-card__header">
-              <img src="assets/images/icons/nexti.svg" alt="">
+              <img src="assets/images/icons/nexti.svg" alt="" width="50" height="50">
               <div class="system-card__info">
-                <h3 class="system-card__title">NEXTI</h3>
+                <h3 class="system-card__title" id="system-title-nexti">NEXTI</h3>
                 <p class="system-card__description">Sistema de chamados NEXTI - Manual de utilização</p>
               </div>
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema NEXTI">Acessar Sistema</a>
           </article>
-          <article class="system-card">
+          <article class="system-card" aria-labelledby="system-title-crm">
             <header class="system-card__header">
-              <img src="assets/images/icons/crm.svg" alt="">
+              <img src="assets/images/icons/crm.svg" alt="" width="50" height="50">
               <div class="system-card__info">
-                <h3 class="system-card__title">CRM</h3>
+                <h3 class="system-card__title" id="system-title-crm">CRM</h3>
                 <p class="system-card__description">Sistema de CRM - Manual de utilização</p>
               </div>
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema CRM">Acessar Sistema</a>
           </article>
-          <article class="system-card">
+          <article class="system-card" aria-labelledby="system-title-projuris">
             <header class="system-card__header">
-              <img src="assets/images/icons/projuris.svg" alt="">
+              <img src="assets/images/icons/projuris.svg" alt="" width="50" height="50">
               <div class="system-card__info">
-                <h3 class="system-card__title">PROJURIS</h3>
+                <h3 class="system-card__title" id="system-title-projuris">PROJURIS</h3>
                 <p class="system-card__description">Sistema Projuris - Manual de utilização</p>
               </div>
             </header>
@@ -192,10 +192,10 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contato" aria-labelledby="contact-title">
       <div class="contact__container max-content">
         <div class="contact__intro">
-          <h2 class="contact__title">Entre em <span class="contact__title--highlight">Contato</span></h2>
+          <h2 class="contact__title" id="contact-title">Entre em <span class="contact__title--highlight">Contato</span></h2>
           <p class="contact__subtitle">Nossa equipe está sempre disponível para atendê-lo. Entre em contato através dos canais abaixo.</p>
           <div class="ramal-card">
             <h3 class="ramal-card__title">Listas de Ramais</h3>
@@ -204,10 +204,10 @@
           </div>
         </div>
         <div class="contact__details">
-          <article class="info-card">
+          <article class="info-card" aria-labelledby="info-title-location">
             <header class="info-card__header">
-              <img src="assets/images/icons/location.svg" alt="">
-              <h3 class="info-card__title">Localização</h3>
+              <img src="assets/images/icons/location.svg" alt="" width="25" height="25">
+              <h3 class="info-card__title" id="info-title-location">Localização</h3>
             </header>
             <address class="info-card__content">
               Av. Conde Francisco Matarazzo, 100<br>
@@ -215,27 +215,27 @@
               09520-100
             </address>
           </article>
-          <article class="info-card">
+          <article class="info-card" aria-labelledby="info-title-hours">
             <header class="info-card__header">
-              <img src="assets/images/icons/business-hours.svg" alt="">
-              <h3 class="info-card__title">Horário de Funcionamento</h3>
+              <img src="assets/images/icons/business-hours.svg" alt="" width="25" height="25">
+              <h3 class="info-card__title" id="info-title-hours">Horário de Funcionamento</h3>
             </header>
             <div class="info-card__content">
               <p>Segunda a Sexta: 08:00 - 18:00</p>
               <p><span class="info-card__content--highlight">Atendimento de emergência 24h</span></p>
             </div>
           </article>
-          <article class="info-card">
+          <article class="info-card" aria-labelledby="info-title-general">
             <header class="info-card__header">
-              <h3 class="info-card__title">Informações Gerais</h3>
+              <h3 class="info-card__title" id="info-title-general">Informações Gerais</h3>
             </header>
             <div class="info-card__content">
               <p class="info-card__contact-line">
-                <img src="assets/images/icons/mail.svg" alt="">
+                <img src="assets/images/icons/mail.svg" alt="" width="25" height="25">
                 <a href="mailto:gocil@gocil.com.br">gocil@gocil.com.br</a>
               </p>
               <p class="info-card__contact-line">
-                <img src="assets/images/icons/telephone.svg" alt="">
+                <img src="assets/images/icons/telephone.svg" alt="" width="25" height="25">
                 <a href="tel:+5511123456789">(11) 12345-6789</a>
               </p>
             </div>
@@ -249,7 +249,7 @@
     <div class="footer__container max-content">
       <div class="footer__branding">
         <div class="footer__logo">
-          <img src="assets/images/logos/gocil-logo-footer.svg" alt="Logomarca GOCIL em versão para rodapé">
+          <img src="assets/images/logos/gocil-logo-footer.svg" alt="Logomarca GOCIL em versão para rodapé" width="50" height="50">
           <div class="footer__logo-text">
             <h4>GOCIL</h4>
             <span>Tecnologia em Segurança e Multisserviços</span>
@@ -257,15 +257,15 @@
         </div>
         <p class="footer__description">Soluções Completas em segurança, tecnologia e multisserviços para empresas que buscam excelência.</p>
       </div>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="Navegação do Rodapé">
         <h5 class="footer__nav-title">Links Rápidos</h5>
         <ul class="footer__nav-list">
-          <li><a href="#">Sistemas</a></li>
-          <li><a href="#">Listas de Ramais</a></li>
+          <li><a href="#sistemas">Sistemas</a></li>
+          <li><a href="#contato">Listas de Ramais</a></li>
           <li><a href="#">Políticas Gocil</a></li>
         </ul>
       </nav>
-      <nav class="footer__nav">
+      <nav class="footer__nav" aria-label="Links de Serviços">
         <h5 class="footer__nav-title">Nossos Serviços</h5>
         <ul class="footer__nav-list">
           <li><a href="#">Segurança Patrimonial</a></li>
@@ -277,11 +277,11 @@
         <h5 class="footer__nav-title">Contato</h5>
         <address class="footer__nav-list">
           <p class="footer__contact-line">
-            <img src="assets/images/icons/contact.svg" alt="">
+            <img src="assets/images/icons/contact.svg" alt="" width="16" height="16">
             <span>(11) 1234-5678</span>
           </p>
           <p class="footer__contact-line">
-            <img src="assets/images/icons/location.svg" alt="">
+            <img src="assets/images/icons/location.svg" alt="" width="16" height="16">
             <span>São Caetano do Sul - SP</span>
           </p>
         </address>
