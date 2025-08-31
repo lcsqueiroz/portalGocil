@@ -1,24 +1,46 @@
+/*Design Token do projeto. Essas informações foram extraídas no desenvolvimento do designer (FIGMA). Parte dessas configurações foram alteradas para melhor se encaixar no desenvolvimento. Todos as váriáveis são utilizáveis em algum trecho do site, por este motivos todas estão sendo comentadas. Evitando deixar variáveis inutilizáveis.*/
+
 :root {
-  /* Adicione aqui os seus Design Tokens que já criamos */
-  --color-text-title: #e7e9ed;
-  --color-text-body-primary: #e5e5e5;
-  --color-text-body-secondary: #dadef2;
-  --color-text-contrast: #ffc60a;
-  --color-text-dark: #272727;
-  --color-text-footer: #bfbfbf;
+  /* ==============================================
+    CORES
+    ==============================================
+  */
 
-  --color-background-section-university: #001d3b;
-  --color-background-section-contact: #0b111e;
-  --color-background-footer: #0b0a0a;
-  --color-background-header: #f5f6fa;
-  --color-background-ramal-button: #1b1b1b;
+  /* Cores de Texto */
+  --color-text-title: #e7e9ed; /* Cor principal para títulos grandes (H1, H2, etc) */
+  --color-text-body-primary: #e5e5e5; /* Cor padrão para parágrafos */
+  --color-text-body-secondary: #dadef2; /* Cor para textos secundários e descrições */
+  --color-text-contrast: #ffc60a; /* Cor de destaque (amarelo), usada em títulos e tags */
+  --color-text-dark: #1b1b1b; /* Cor de texto escura para usar sobre fundos claros (botões, header) */
+  --color-text-footer: #bfbfbf; /* Cor de texto específica para o rodapé */
 
-  --color-background-card-services: rgba(53, 111, 171, 0.25);
-  --color-background-card-services-hover: rgba(128, 183, 241, 0.4);
+  /* Cores de Fundo */
+  --color-background-header: #f5f6fa; /* Cor de fundo do header */
+  --color-background-section-university: #001d3b; /* Fundo da seção Universidade */
+  --color-background-section-contact: #0b111e; /* Fundo da seção de Contato */
+  --color-background-footer: #0b0a0a; /* Fundo do rodapé */
+  --color-background-card-services: rgba(
+    53,
+    111,
+    171,
+    0.25
+  ); /* Fundo dos cards de serviço e sistema */
+  --color-background-card-services-hover: rgba(
+    128,
+    183,
+    241,
+    0.4
+  ); /* Efeito hover dos cards de serviço */
+  --color-background-card-contact: rgba(
+    217,
+    217,
+    217,
+    0.1
+  ); /* Fundo dos cards de informação de contato */
+  --color-background-ramal-button: #1b1b1b; /* Fundo do botão dentro do card de ramal */
+  --color-background-tag: #5c594e; /* Fundo das tags de departamento */
 
-  --color-background-card-contact: rgba(217, 217, 217, 0.1);
-  --color-background-card-contact-hover: rgba(217, 217, 217, 0.197);
-
+  /* Gradientes */
   --gradient-background-button-yellow: linear-gradient(
     180deg,
     rgb(255, 198, 10) 0%,
@@ -30,51 +52,81 @@
     rgb(231, 233, 237) 100%
   );
 
-  --border-color-button-yellow: #ca9b00;
-  --border-color-button-white: #b8bed0;
+  /* Bordas */
+  --color-border-button-yellow: #ca9b00; /* Cor da borda para botões primários */
+  --color-border-button-white: #b8bed0; /* Cor da borda para botões secundários */
+  --color-border-divider: #333; /* Cor para linhas divisórias, como no rodapé */
 
-  --shadow-primary: 0 0.063rem 0.625rem 0 rgba(0, 0, 0, 0.25);
+  /* ==============================================
+    SOMBRAS E ELEVAÇÃO
+    ==============================================
+  */
+  --shadow-primary: 0 0.063rem 0.625rem 0 rgba(0, 0, 0, 0.25); /* Sombra padrão para botões e cards */
 
+  /* ==============================================
+    TIPOGRAFIA
+    ==============================================
+  */
+
+  /* Família da Fonte */
   --font-family-base: "Roboto", sans-serif;
-  --font-size-hero: 9.375rem;
-  --font-size-title: 5rem; /*Padrão de títulos*/
-  --font-size-lg: 1.25rem; /*Padrão de títulos em card*/
-  --font-size-md: 1rem; /*Padrão de texto*/
-  --font-size-sm: 0.75rem; /*Informações secundárias*/
-  --font-size-xs: 0.875rem; /*14px*/
-  --font-size-footer-title: 1.875rem;
 
-  /*Estilos e espaçamentos de fontes*/
+  /* Tamanhos de Fonte */
+  --font-size-hero: 9.375rem; /* 150px - Usado no H1 da seção Hero */
+  --font-size-title: 5rem; /* 80px - Padrão para títulos de seção (H2) */
+  --font-size-footer-title: 1.875rem; /* 30px - Título "GOCIL" no rodapé */
+  --font-size-lg: 1.25rem; /* 20px - Padrão para subtítulos e títulos de card */
+  --font-size-md: 1rem; /* 16px - Tamanho de fonte base para parágrafos */
+  --font-size-sm: 0.875rem; /* 14px - Textos de navegação e informações gerais */
+  --font-size-xs: 0.75rem; /* 12px - Textos pequenos (metadados, tags, etc) */
 
-  --font-weight-title: 900; /*Padrão Títulos*/
-  --font-weight-bold: bold; /*Padrão para títulose secundários*/
-  --font-weight-medium: 500;
-  --font-weight-normal: normal;
+  /* Pesos de Fonte */
+  --font-weight-title: 900; /* Usado nos títulos principais */
+  --font-weight-bold: 700; /* Peso "bold" padrão */
+  --font-weight-medium: 500; /* Para textos com destaque sutil */
+  --font-weight-normal: 400; /* Peso padrão do corpo de texto */
 
-  --font-line-height-sm: 0.8; /*Title Hero-Section*/
-  --font-line-height-md: 0.9;
-  --font-line-height-lg: 1; /*Padrão para Títulos*/
-  --font-line-heigth-xl: 1.5; /*Padrão para corpo de texto*/
+  /* Alturas de Linha */
+  --font-line-height-sm: 0.8; /* Para o H1 da seção Hero, para aproximar as linhas */
+  --font-line-height-md: 1.2; /* Para títulos em geral */
+  --font-line-height-lg: 1.5; /* Altura de linha padrão para parágrafos */
 
-  --font-width-primary: 60ch;
-  --title-text-transform: uppercase;
+  /* Outras Propriedades */
+  --font-width-primary: 60ch; /* Largura máxima ideal para parágrafos, para melhor legibilidade */
+  --title-text-transform: uppercase; /* Transformação de texto para títulos */
 
-  /*Bordas*/
+  /* ==============================================
+    ESPAÇAMENTOS (Base: 1rem = 16px)
+    ==============================================
+  */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 2.5rem; /* 40px */
+  --spacing-3xl: 3.25rem; /* 52px */
+  --spacing-4xl: 5rem; /* 80px */
+  --spacing-5xl: 6.25rem; /* 100px */
 
-  --border-xs: 0.313rem; /*usando na aba de sistemas*/
-  --border-sm: 0.625rem;
-  --border-lg: 1.25rem; /*Padrão para Botões*/
+  /* ==============================================
+    TAMANHOS E LAYOUT
+    ==============================================
+  */
+  --layout-width-max: 1440px; /* Largura máxima do container principal (.max-content) */
+  --icon-height-header: 4.375rem; /* Altura da imagem do logo no cabeçalho */
+  --icon-height-md: 3.125rem; /* 50px - Ícones médios (ex: cards de sistema) */
+  --icon-height-sm: 1.563rem; /* 25px - Ícones pequenos (ex: cards de contato) */
+  --card-width-course: 600px; /* Largura dos cards de curso */
+  --card-width-info: 400px; /* Largura dos cards de informação (contato) */
 
-  --spacing-xs: 0.313rem;
-  --spacing-sm: 0.75rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  --spacing-3xl: 3.25rem;
-  --spacing-4xl: 5rem;
-  --spacing-5xl: 6.25rem;
-
-  /*Tamanho para ícones*/
-  --icon-heigth-sm: 1.563rem;
-  --icon-heigth-md: 3.125rem;
+  /* ==============================================
+    BORDAS E RAIOS
+    ==============================================
+  */
+  --border-radius-pill: 25px; /* Raio de borda para elementos em formato de pílula (links do header) */
+  --border-radius-lg: 1.25rem; /* 20px - Raio de borda grande (cards de curso) */
+  --border-radius-md: 0.625rem; /* 10px - Raio de borda médio (cards de serviço, tags) */
+  --border-radius-sm: 0.313rem; /* 5px - Raio de borda pequeno (botões, cards de sistema) */
 }

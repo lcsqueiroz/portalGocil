@@ -1,6 +1,8 @@
+/*Configuração de base para fontes e textos*/
 body {
   font-family: var(--font-family-base);
   font-size: var(--font-size-md);
+  text-decoration: none;
   color: var(--color-text-body-primary);
-  background-color: #003871; /* Cor de fundo original */
+  background-color: var(--color-background-section-university);
 }

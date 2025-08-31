@@ -6,28 +6,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: var(--spacing-md);
-  padding-bottom: var(--spacing-md);
+  padding-top: var(--spacing-sm);
+  padding-bottom: var(--spacing-sm);
 }
 
 .header__logo img {
-  height: 70px;
+  height: var(--icon-height-header);
 }
 
 .header__nav-list {
   display: flex;
-  gap: 0.5rem; /* Espaçamento entre os links */
+  gap: var(--spacing-xs);
 }
 
 .header__nav-item a {
-  padding: 0.625rem 1.25rem; /* 10px 20px */
+  padding: var(--spacing-xs) var(--spacing-lg);
   color: var(--color-text-dark);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-sm);
   border: 1px solid transparent;
-  border-radius: 25px;
-  transition: all 0.3s ease;
+  border-radius: var(--border-radius-pill);
+  transition: initial;
 }
 
 .header__nav-item a:hover {
-  border-color: #e7e9ed;
-  background-color: #fafdff;
+  transition: 1s;
+  border: 1px solid var(--color-background-tag);
 }

@@ -1,7 +1,10 @@
+/*Tags utilizadas na sessão da universidade (departamentos obrigatórios para os cursos disponíveis).*/
 .tag {
-  font-size: var(--font-size-sm);
+  display: inline-block;
+  font-size: var(--font-size-xs);
   color: var(--color-text-contrast);
-  padding: 5px;
-  background-color: #5c594e;
-  border-radius: 10px;
+  padding: var(--spacing-xxs) var(--spacing-xs);
+  background-color: var(--color-background-tag);
+  border-radius: var(--border-radius-md);
+  font-weight: var(--font-weight-medium);
 }

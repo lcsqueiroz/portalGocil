@@ -5,9 +5,10 @@
 .contact__container {
   display: flex;
   justify-content: center;
-  gap: var(--spacing-3xl);
-  padding-top: var(--spacing-3xl);
-  padding-bottom: var(--spacing-3xl);
+  gap: var(--spacing-5xl);
+  padding-top: var(--spacing-5xl);
+  padding-bottom: var(--spacing-5xl);
+  align-items: flex-start;
 }
 
 .contact__intro {
@@ -21,8 +22,9 @@
 .contact__title {
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-title);
-  line-height: var(--font-line-lg);
+  line-height: var(--font-line-height-md);
   color: var(--color-text-title);
+  text-transform: var(--title-text-transform);
 }
 
 .contact__title--highlight {
@@ -30,7 +32,7 @@
 }
 
 .contact__subtitle {
-  max-width: var(--font-width-primary);
+  max-width: var(--max-width-text);
   color: var(--color-text-title);
   font-size: var(--font-size-lg);
 }
@@ -38,5 +40,5 @@
 .contact__details {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xl);
+  gap: var(--spacing-lg);
 }

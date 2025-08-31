@@ -1,3 +1,4 @@
+/*Retirando todos os pressets que o navegador carrega para a página. Parte dessas configurações foram criadas com o auxílio de I.A. Como por exemplo retirar o focus para usuários de mouse e ficar disponível apenas para usuários que estão utilizando a navegação no teclado*/
 *,
 *::before,
 *::after {
@@ -42,4 +43,15 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+/* Remove o anel de foco APENAS para usuários de mouse */
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+/* Mantém o anel de foco para usuários de teclado */
+:focus-visible {
+  outline: 2px solid var(--color-text-contrast); /* Exemplo usando sua cor de contraste */
+  outline-offset: 2px;
 }

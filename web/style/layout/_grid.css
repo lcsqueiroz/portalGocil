@@ -1,0 +1,16 @@
+.hero__services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-4xl);
+  margin-top: var(--spacing-5xl);
+  margin-bottom: var(--spacing-5xl);
+}
+
+.systems__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-xl);
+  justify-content: center;
+  max-width: var(--layout-width-grid-systems);
+  margin: 0 auto;
+}

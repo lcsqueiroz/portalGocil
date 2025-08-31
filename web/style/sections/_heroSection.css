@@ -1,3 +1,10 @@
+.hero {
+  background-image: url(../../img/systems/LockScreen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -20,7 +27,7 @@
 
 .hero__subtitle {
   font-size: var(--font-size-lg);
-  line-height: var(--font-line-height-xl);
+  line-height: var(--font-line-height-lg);
   max-width: var(--font-width-primary);
   color: var(--color-text-title);
 }
@@ -28,49 +35,5 @@
 .hero__actions {
   display: flex;
   gap: var(--spacing-xl);
-  padding: var(--spacing-md) 0;
-}
-
-.hero__services-grid {
-  display: flex;
-  justify-content: center;
-  gap: var(--spacing-4xl);
-  margin-top: var(--spacing-5xl);
-  margin-bottom: var(--spacing-5xl);
-}
-
-.service-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-lg);
-  height: 250px;
-  width: 300px;
-  border-radius: var(--border-sm);
-  background-color: var(--color-background-card-services);
-  transition: background-color 0.3s ease;
-}
-
-.service-card:hover {
-  background-color: var(--color-background-card-services-hover);
-}
-
-.service-card__title {
-  color: var(--color-text-title);
-  font-size: var(--font-size-lg);
-  font-weight: var(--font-weight-bold);
-}
-
-.service-card__description {
-  font-weight: var(--font-weight-normal);
-  line-height: var(--font-line-height-xl);
-  color: var(--color-text-body-secondary);
-}
-.background {
-  background-image: url(/web/img/systems/LockScreen.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding-top: var(--spacing-md);
 }

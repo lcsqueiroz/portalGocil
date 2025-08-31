@@ -1,6 +1,7 @@
 .max-content {
-  margin: 0 auto;
-  padding-left: var(--spacing-md);
-  padding-right: var(--spacing-md);
-  max-width: 1440px; /* Exemplo de largura máxima */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-2xl);
+  padding-right: var(--spacing-2xl);
+  max-width: var(--layout-width-max);
 }
