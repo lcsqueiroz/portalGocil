@@ -17,3 +17,7 @@
 @import url(sections/_systems.css);
 @import url(sections/_contact.css);
 @import url(layout/_footer.css);
+
+/* 4. Media Queries para Responsividade */
+@import url(layout/_responsive.css);
+
