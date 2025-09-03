@@ -33,3 +33,76 @@
   background-color: var(--color-background-nav-hover);
   border-color: var(--color-border-nav-hover);
 }
+
+/* Estilos do Menu Hambúrguer */
+.header__hamburger {
+  display: none; /* Oculto por padrão */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2.5rem;
+  height: 2rem;
+  place-items: center;
+  color: var(--color-text-dark);
+  border: none; /*Por ser um botão por padrão vem com borda*/
+  cursor: pointer;
+}
+
+.header__hamburger span {
+  width: 2rem;
+  height: 0.25rem;
+  background: var(--color-text-dark);
+  border-radius: var(--border-radius-pill);
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px; /*Efeito X ao abrir o menu*/
+}
+
+/* Media Query para o menu responsivo */
+@media (max-width: 1440px) {
+  .header__hamburger {
+    display: flex; /* Exibe o ícone do hambúrguer */
+  }
+
+  .header__nav-list {
+    position: absolute;
+    top: var(--spacing-hamburguer); /* espaço do hamburguer com o topo da pg */
+    right: 0; /* Alinha o menu à direita */
+    width: 30%;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens do menu */
+    background-color: var(--color-background-header);
+    max-height: 0; /*Ao clicar o menu fechar*/
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .header__nav-list.active {
+    max-height: 500px; /* Altura máxima para exibir o menu */
+    padding: var(--spacing-xxs) 0; /* Adiciona padding quando o menu está aberto */
+  }
+
+  .header__nav-item {
+    text-align: center;
+    padding: var(--spacing-xxs) 0;
+    width: 100%; /* link ocupa toda largura */
+  }
+
+  .header__nav-item a {
+    display: block;
+    width: 100%;
+  }
+
+  /* Animação do ícone do hambúrguer para 'X' */
+  .header__hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .header__hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  .header__hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+}
