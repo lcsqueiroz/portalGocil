@@ -1,10 +1,7 @@
-/*Design Token do projeto. Essas informações foram extraídas no desenvolvimento do designer (FIGMA). Parte dessas configurações foram alteradas para melhor se encaixar no desenvolvimento. Todos as váriáveis são utilizáveis em algum trecho do site, por este motivos todas estão sendo comentadas. Evitando deixar variáveis inutilizáveis.*/
+/* Design Token */
 
 :root {
-  /* ==============================================
-    CORES
-    ==============================================
-  */
+  /* CORES */
 
   /* Cores de Texto */
   --color-text-title: #e7e9ed; /* Cor principal para títulos grandes (H1, H2, etc) */
@@ -57,53 +54,42 @@
   --button-hover-animation: scale(1.01);
 
   /* Bordas */
-  --color-border-button-yellow: #ca9b00; /* Cor da borda para botões primários */
-  --color-border-button-white: #b8bed0; /* Cor da borda para botões secundários */
-  --color-border-nav-hover: #e7e9ed; /* Cor da borda do link da navegação no estado hover */
-  --color-border-divider: #333; /* Cor para linhas divisórias, como no rodapé */
+  --color-border-button-yellow: #ca9b00;
+  --color-border-button-white: #b8bed0;
+  --color-border-nav-hover: #e7e9ed; /* hover em links*/
+  --color-border-divider: #333; /* Divisória footer */
 
-  /* ==============================================
-    SOMBRAS E ELEVAÇÃO
-    ==============================================
-  */
+  /* SOMBRAS E ELEVAÇÃO  */
   --shadow-primary: 0 0.063rem 0.625rem 0 rgba(0, 0, 0, 0.25); /* Sombra padrão para botões e cards */
 
-  /* ==============================================
-    TIPOGRAFIA
-    ==============================================
-  */
-
-  /* Família da Fonte */
+  /* Fonte */
   --font-family-base: "Roboto", sans-serif;
 
   /* Tamanhos de Fonte */
-  --font-size-hero: 9.375rem; /* 150px - Usado no H1 da seção Hero */
-  --font-size-title: 5rem; /* 80px - Padrão para títulos de seção (H2) */
-  --font-size-footer-title: 1.875rem; /* 30px - Título "GOCIL" no rodapé */
-  --font-size-lg: 1.25rem; /* 20px - Padrão para subtítulos e títulos de card */
-  --font-size-md: 1rem; /* 16px - Tamanho de fonte base para parágrafos */
-  --font-size-sm: 0.875rem; /* 14px - Textos de navegação e informações gerais */
-  --font-size-xs: 0.75rem; /* 12px - Textos pequenos (metadados, tags, etc) */
+  --font-size-hero: 9.375rem; /* 150px */
+  --font-size-title: 5rem; /* 80px */
+  --font-size-footer-title: 1.875rem; /* 30px */
+  --font-size-lg: 1.25rem; /* 20px */
+  --font-size-md: 1rem; /* 16px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-xs: 0.75rem; /* 12px */
 
   /* Pesos de Fonte */
-  --font-weight-title: 900; /* Usado nos títulos principais */
-  --font-weight-bold: 700; /* Peso "bold" padrão */
-  --font-weight-medium: 500; /* Para textos com destaque sutil */
-  --font-weight-normal: 400; /* Peso padrão do corpo de texto */
+  --font-weight-title: 900;
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
 
   /* Alturas de Linha */
-  --font-line-height-sm: 0.8; /* Para o H1 da seção Hero, para aproximar as linhas */
-  --font-line-height-md: 1.2; /* Para títulos em geral */
-  --font-line-height-lg: 1.5; /* Altura de linha padrão para parágrafos */
+  --font-line-height-sm: 0.8;
+  --font-line-height-md: 1.2;
+  --font-line-height-lg: 1.5;
 
   /* Outras Propriedades */
-  --max-width-text: 60ch; /* Largura máxima ideal para parágrafos, para melhor legibilidade */
-  --title-text-transform: uppercase; /* Transformação de texto para títulos */
+  --max-width-text: 60ch;
+  --title-text-transform: uppercase;
 
-  /* ==============================================
-    ESPAÇAMENTOS (Base: 1rem = 16px)
-    ==============================================
-  */
+  /* Espaçamento */
   --spacing-xxs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 0.75rem; /* 12px */
@@ -114,29 +100,23 @@
   --spacing-3xl: 3.25rem; /* 52px */
   --spacing-4xl: 5rem; /* 80px */
   --spacing-5xl: 6.25rem; /* 100px */
-  --spacing-hamburguer: 5.8rem; /* 94px */
 
-  /* ==============================================
-    TAMANHOS E LAYOUT
-    ==============================================
-  */
-  --layout-width-max: 1440px; /* Largura máxima do container principal (.max-content) */
-  --layout-width-grid-systems: 1040px; /* Largura do grid de sistemas */
-  --header-logo-height: 70px; /* Altura da imagem do logo no cabeçalho */
-  --icon-height-md: 3.125rem; /* 50px - Ícones médios (ex: cards de sistema, logo do footer) */
-  --icon-height-sm: 1.563rem; /* 25px - Ícones pequenos (ex: cards de contato e curso) */
-  --card-height-service: 250px; /* Altura dos cards de serviço */
-  --card-width-service: 300px; /* Largura dos cards de serviço */
-  --card-width-course: 600px; /* Largura dos cards de curso */
-  --card-width-ramal: 430px; /* Largura do card de ramal */
-  --card-width-info: 400px; /* Largura dos cards de informação (contato) */
+  /* Tamanhos e Layout */
+  --header-height: 5.875rem; /* 94px */
+  --layout-width-max: 90rem; /* 1440px */
+  --layout-width-grid-systems: 65rem; /* 1040px */
+  --header-logo-height: 4.375rem; /* 70px */
+  --icon-height-md: 3.125rem; /* 50px */
+  --icon-height-sm: 1.563rem; /* 25px */
+  --card-height-service: 15.625rem; /* 250px */
+  --card-width-service: 18.75rem; /* 300px */
+  --card-width-course: 37.5rem; /* 600px */
+  --card-width-ramal: 26.875rem; /* 430px */
+  --card-width-info: 25rem; /* 400px */
 
-  /* ==============================================
-    BORDAS E RAIOS
-    ==============================================
-  */
-  --border-radius-pill: 25px; /* Raio de borda para elementos em formato de pílula (links do header) */
-  --border-radius-lg: 1.25rem; /* 20px - Raio de borda grande (cards de curso) */
-  --border-radius-md: 0.625rem; /* 10px - Raio de borda médio (cards de serviço, tags) */
-  --border-radius-sm: 0.313rem; /* 5px - Raio de borda pequeno (botões, cards de sistema) */
+  /* Bordas e Arredondamentos */
+  --border-radius-pill: 1.5625rem; /* 25px */
+  --border-radius-lg: 1.25rem; /* 20px */
+  --border-radius-md: 0.625rem; /* 10px */
+  --border-radius-sm: 0.313rem; /* 5px */
 }

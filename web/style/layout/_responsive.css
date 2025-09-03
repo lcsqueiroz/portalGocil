@@ -1,19 +1,14 @@
-/* ===================================================================
-   MEDIA QUERIES AVANÇADAS PARA RESPONSIVIDADE
-   =================================================================== */
+/* MEDIA QUERIES */
 
-/* ==============================================
-   BREAKPOINT 1: LAPTOPS E DESKTOPS MENORES (<= 1200px)
-   ============================================== */
+/* BREAKPOINT 1 */
 @media (max-width: 1200px) {
-  /* --- AJUSTES GERAIS DE ESPAÇAMENTO E FONTES --- */
+  /* --- ALTERANDO BASE --- */
   :root {
     --font-size-hero: 8rem; /* 128px */
     --font-size-title: 4.5rem; /* 72px */
     --spacing-4xl: 4.5rem; /* 72px */
     --spacing-5xl: 5.5rem; /* 88px */
   }
-
   .max-content {
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
@@ -30,7 +25,7 @@
     display: block;
   }
   .university__course-deck {
-    display: none; /* Oculta os cursos em telas menores */
+    display: none;
   }
   .university__container {
     flex-direction: column;
@@ -48,11 +43,9 @@
   }
 }
 
-/* ==============================================
-   BREAKPOINT 2: TABLETS (<= 992px)
-   ============================================== */
+/* BREAKPOINT 2 */
 @media (max-width: 992px) {
-  /* --- AJUSTES GERAIS DE FONTES --- */
+  /* --- ALTERANDO BASE --- */
   :root {
     --font-size-hero: 7rem; /* 112px */
     --font-size-title: 4rem; /* 64px */
@@ -64,13 +57,11 @@
     text-align: center;
     padding-bottom: var(--spacing-5xl);
   }
-
   .hero__actions {
     justify-content: center;
   }
-
   .hero__services-grid {
-    display: none; /* Oculta os cards de serviço para não poluir a tela */
+    display: none;
   }
 
   /* --- SYSTEMS SECTION --- */
@@ -117,18 +108,14 @@
   }
 }
 
-/* ==============================================
-   BREAKPOINT 3: CELULARES GRANDES E TABLETS PEQUENOS (<= 768px)
-   ============================================== */
+/* BREAKPOINT 3 */
 @media (max-width: 768px) {
-  /* --- AJUSTES GERAIS DE FONTES E ESPAÇAMENTO --- */
   :root {
     --font-size-hero: 5.5rem; /* 88px */
     --font-size-title: 3rem; /* 48px */
     --font-size-lg: 1.125rem; /* 18px */
     --spacing-5xl: 4rem; /* 64px */
   }
-
   .max-content {
     padding-left: var(--spacing-xl);
     padding-right: var(--spacing-xl);
@@ -150,7 +137,6 @@
     width: 100%;
     max-width: 320px;
   }
-
   .hero__actions .button {
     width: 100%;
   }
@@ -171,17 +157,13 @@
   .footer__logo img {
     display: none;
   }
-
   .footer__nav {
     align-items: center;
   }
 }
 
-/* ==============================================
-   BREAKPOINT 4: CELULARES PADRÃO (<= 576px)
-   ============================================== */
+/* BREAKPOINT 4 */
 @media (max-width: 576px) {
-  /* --- AJUSTES GERAIS DE FONTES --- */
   :root {
     --font-size-hero: 4.5rem; /* 72px */
     --font-size-title: 2.5rem; /* 40px */
@@ -201,24 +183,20 @@
   .systems__subtitle {
     max-width: 45ch;
   }
-}
-/* FOOTER SECTION */
-.footer__contact-line span {
-  max-width: 12ch;
+  /* FOOTER SECTION */
+  .footer__contact-line span {
+    max-width: 12ch;
+  }
 }
 
-/* ==============================================
-   BREAKPOINT 5: CELULARES PEQUENOS (<= 375px)
-   ============================================== */
+/* BREAKPOINT 5 */
 @media (max-width: 375px) {
-  /* --- AJUSTES GERAIS DE FONTES E ESPAÇAMENTO --- */
   :root {
     --font-size-hero: 4rem; /* 64px */
     --font-size-title: 2.25rem; /* 36px */
     --header-logo-height: 60px;
     --spacing-hamburguer: 5.25rem;
   }
-
   .max-content {
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);

@@ -95,6 +95,6 @@
   justify-content: space-between;
   padding-top: var(--spacing-xl);
   padding-bottom: var(--spacing-xl);
-  border-top: 1px solid var(--color-border-divider);
+  border-top: 0.0625rem solid var(--color-border-divider); /* 1px */
   font-weight: var(--font-weight-medium);
 }

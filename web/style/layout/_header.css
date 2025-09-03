@@ -24,7 +24,7 @@
   color: var(--color-text-dark);
   font-weight: var(--font-weight-normal);
   font-size: var(--font-size-md);
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent; /* 1px */
   border-radius: var(--border-radius-pill);
   transition: all 0.3s ease;
 }
@@ -36,11 +36,11 @@
 
 /* Estilos do Menu Hambúrguer */
 .header__hamburger {
-  display: none; /* Oculto por padrão */
+  display: none;
   flex-direction: column;
   justify-content: space-around;
-  width: 2.5rem;
-  height: 2rem;
+  width: var(--spacing-2xl);
+  height: var(--spacing-xl);
   place-items: center;
   color: var(--color-text-dark);
   border: none; /*Por ser um botão por padrão vem com borda*/
@@ -48,13 +48,13 @@
 }
 
 .header__hamburger span {
-  width: 2rem;
-  height: 0.25rem;
+  width: var(--spacing-xl);
+  height: var(--spacing-xxs);
   background: var(--color-text-dark);
   border-radius: var(--border-radius-pill);
   transition: all 0.3s linear;
   position: relative;
-  transform-origin: 1px; /*Efeito X ao abrir o menu*/
+  transform-origin: 0.0625rem; /* 1px - Efeito X ao abrir o menu*/
 }
 
 /* Media Query para o menu responsivo */
@@ -65,7 +65,7 @@
 
   .header__nav-list {
     position: absolute;
-    top: var(--spacing-hamburguer); /* espaço do hamburguer com o topo da pg */
+    top: var(--header-height);
     right: 0; /* Alinha o menu à direita */
     width: 30%;
     flex-direction: column;
@@ -77,7 +77,7 @@
   }
 
   .header__nav-list.active {
-    max-height: 500px; /* Altura máxima para exibir o menu */
+    max-height: 31.25rem; /* 500px */
     padding: var(--spacing-xxs) 0; /* Adiciona padding quando o menu está aberto */
   }
 
@@ -99,7 +99,7 @@
 
   .header__hamburger.active span:nth-child(2) {
     opacity: 0;
-    transform: translateX(20px);
+    transform: translateX(1.25rem); /* 20px */
   }
 
   .header__hamburger.active span:nth-child(3) {

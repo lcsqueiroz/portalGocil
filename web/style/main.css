@@ -1,16 +1,13 @@
-/* 1. Base e Variáveis (Sempre primeiro) */
 @import url(base/_variables.css);
 @import url(base/_reset.css);
 @import url(base/_base.css);
 
-/* 2. Layout Global e Componentes Reutilizáveis */
 @import url(layout/_layout.css);
 @import url(components/_buttons.css);
 @import url(components/_cards.css);
 @import url(layout/_grid.css);
 @import url(components/_tags.css);
 
-/* 3. Estilos Específicos das Seções (Blocos Principais) */
 @import url(layout/_header.css);
 @import url(sections/_heroSection.css);
 @import url(sections/_university.css);
@@ -18,6 +15,4 @@
 @import url(sections/_contact.css);
 @import url(layout/_footer.css);
 
-/* 4. Media Queries para Responsividade */
 @import url(layout/_responsive.css);
-
