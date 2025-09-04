@@ -1,5 +1,10 @@
 /* MEDIA QUERIES */
 
+@media (max-width: 1600px) {
+  .hero {
+    background-image: url(/web/assets/images/backgrounds/bg-hero-1600px.JPG);
+  }
+}
 /* BREAKPOINT 1 */
 @media (max-width: 1200px) {
   /* --- ALTERANDO BASE --- */
@@ -15,9 +20,17 @@
   }
 
   /* --- HERO SECTION --- */
+  .hero {
+    background-image: url(/web/assets/images/backgrounds/bg-hero-1200px.JPG);
+  }
   .hero__services-grid {
     gap: var(--spacing-2xl);
     margin: var(--spacing-2xl) 0;
+  }
+
+  /* --- PARTNERS --- */
+  .partners__track {
+    animation: scroll 70s linear;
   }
 
   /* --- UNIVERSITY SECTION --- */
@@ -52,6 +65,9 @@
   }
 
   /* --- HERO SECTION --- */
+  .hero {
+    background: var(--color-background-hero-section);
+  }
   .hero__container {
     align-items: center;
     text-align: center;
@@ -65,10 +81,14 @@
     display: none;
   }
 
+  /* --- PARTNERS --- */
+  .partners__track {
+    animation: scroll 60s linear;
+  }
   /* --- SYSTEMS SECTION --- */
   .systems__grid {
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-width: var(--layout-width-sm);
     margin: 0 auto;
   }
 
@@ -124,7 +144,7 @@
 
   /* --- HEADER --- */
   .header__nav-list {
-    width: 50%;
+    width: var(--width-md);
   }
 
   /* --- HERO SECTION --- */
@@ -135,19 +155,24 @@
   .hero__actions {
     flex-direction: column;
     gap: var(--spacing-lg);
-    width: 100%;
-    max-width: 320px;
+    width: var(--width-xxl);
+    max-width: var(--layout-width-xs);
   }
   .hero__actions .button {
-    width: 100%;
+    width: var(--width-xxl);
+  }
+
+  /* --- PARTNERS --- */
+  .partners__track {
+    animation: scroll 50s linear;
   }
 
   /* --- CONTACT & CARDS --- */
   .info-card,
   .ramal-card {
     min-width: unset;
-    width: 100%;
-    max-width: 420px;
+    width: var(--width-xxl);
+    max-width: var(--card-width-responsive);
   }
 
   /* --- FOOTER --- */
@@ -172,21 +197,26 @@
 
   /* --- HEADER --- */
   .header__nav-list {
-    width: 60%;
+    width: var(--width-lg);
+  }
+
+  /* --- PARTNERS --- */
+  .partners__track {
+    animation: scroll 40s linear;
   }
 
   /* --- UNIVERSITY SECTION --- */
   .university__description {
-    max-width: 45ch;
+    max-width: var(--max-width-text-sm);
   }
 
   /* --- SYSTEMS SECTION --- */
   .systems__subtitle {
-    max-width: 45ch;
+    max-width: var(--max-width-text-sm);
   }
   /* FOOTER SECTION */
   .footer__contact-line span {
-    max-width: 12ch;
+    max-width: var(--max-width-text-xs);
   }
 }
 
@@ -205,7 +235,7 @@
 
   /* --- HEADER --- */
   .header__nav-list {
-    width: 75%;
+    width: var(--width-xl);
   }
   .header__nav-list {
     top: var(--spacing-hamburguer);
@@ -215,14 +245,17 @@
   .hero__title {
     line-height: 1;
   }
-
+  /* --- PARTNERS --- */
+  .partners__track {
+    animation: scroll 40s linear;
+  }
   /* --- FOOTER --- */
   .footer__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .footer__logo-text h4 {
-    font-size: 1.5rem; /* 24px */
+    font-size: var(--font-size-lg); /* 24px */
   }
   .footer__contact {
     display: none;

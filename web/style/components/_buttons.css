@@ -5,8 +5,9 @@
   font-size: var(--font-size-lg);
   font-weight: var(--font-weight-normal);
   box-shadow: var(--shadow-primary);
-  border: 0.0625rem solid transparent; /* 1px */
-  transition: transform 0.2s ease-in-out;
+  border: 0.0625rem solid var(--color-transparent); /* 1px */
+  transition: transform var(--transition-duration-fast)
+    var(--transition-timing-function);
   cursor: pointer;
 }
 

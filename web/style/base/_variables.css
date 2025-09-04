@@ -16,6 +16,7 @@
   --color-background-body: #001d3b; /* Cor de fundo principal da página */
   --color-background-header: #f5f6fa; /* Cor de fundo do header */
   --color-background-nav-hover: #fafdff; /* Cor do link da navegação no estado hover */
+  --color-background-hero-section: #062a51;
   --color-background-section-university: #001d3b; /* Fundo da seção Universidade */
   --color-background-section-contact: #0b111e; /* Fundo da seção de Contato */
   --color-background-footer: #0b0a0a; /* Fundo do rodapé */
@@ -51,29 +52,23 @@
     rgb(245, 246, 250) 0%,
     rgb(231, 233, 237) 100%
   );
-  --gradient-background-university: linear-gradient(
-    180deg,
-    rgb(1, 29, 59) 0%,
-    rgb(1, 29, 59) 100%
-  );
-  --gradient-background-systems: linear-gradient(
-    180deg,
-    rgb(1, 29, 59) 0%,
-    rgb(11, 17, 30) 100%
-  );
-  --gradient-background-contact: linear-gradient(
-    180deg,
-    rgb(11, 17, 30) 0%,
-    rgb(11, 10, 10) 100%
-  );
 
+  /* Animações e Transições */
   --button-hover-animation: scale(1.01);
+  --button-hover-animation-alt: scale(1.02);
+  --hover-animation-alt: scale(1.05);
+
+  --transition-timing-function: ease-in-out;
+  --animation-duration-long: 80s;
+  --animation-duration-medium: 60s;
+  --animation-duration-short: 40s;
 
   /* Bordas */
   --color-border-button-yellow: #ca9b00;
   --color-border-button-white: #b8bed0;
   --color-border-nav-hover: #e7e9ed; /* hover em links*/
   --color-border-divider: #333; /* Divisória footer */
+  --color-transparent: transparent;
 
   /* SOMBRAS E ELEVAÇÃO  */
   --shadow-primary: 0 0.063rem 0.625rem 0 rgba(0, 0, 0, 0.25); /* Sombra padrão para botões e cards */
@@ -104,9 +99,14 @@
 
   /* Outras Propriedades */
   --max-width-text: 60ch;
+  --max-width-text-sm: 45ch;
+  --max-width-text-xs: 12ch;
   --title-text-transform: uppercase;
+  --letter-spacing-lg: 0.15em;
+  --opacity-primary: 0.8;
 
   /* Espaçamento */
+  --spacing-xxxs: 0.125rem; /* 2px */
   --spacing-xxs: 0.25rem; /* 4px */
   --spacing-xs: 0.5rem; /* 8px */
   --spacing-sm: 0.75rem; /* 12px */
@@ -117,11 +117,20 @@
   --spacing-3xl: 3.25rem; /* 52px */
   --spacing-4xl: 5rem; /* 80px */
   --spacing-5xl: 6.25rem; /* 100px */
+  --spacing-hamburguer: 5.25rem; /* 84px */
 
   /* Tamanhos e Layout */
   --header-height: 5.875rem; /* 94px */
   --layout-width-max: 90rem; /* 1440px */
   --layout-width-grid-systems: 65rem; /* 1040px */
+  --layout-width-sm: 31.25rem; /* 500px */
+  --layout-width-xs: 20rem; /* 320px */
+  --width-sm: 30%;
+  --width-md: 50%;
+  --width-lg: 60%;
+  --width-xl: 75%;
+  --width-xxl: 100%;
+  --max-height-md: 31.25rem; /* 500px */
   --header-logo-height: 4.375rem; /* 70px */
   --icon-height-md: 3.125rem; /* 50px */
   --icon-height-sm: 1.563rem; /* 25px */
@@ -130,6 +139,7 @@
   --card-width-course: 37.5rem; /* 600px */
   --card-width-ramal: 26.875rem; /* 430px */
   --card-width-info: 25rem; /* 400px */
+  --card-width-responsive: 26.25rem; /* 420px */
 
   /* Bordas e Arredondamentos */
   --border-radius-pill: 1.5625rem; /* 25px */

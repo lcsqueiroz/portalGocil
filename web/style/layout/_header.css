@@ -43,6 +43,7 @@
   height: var(--spacing-xl);
   place-items: center;
   color: var(--color-text-dark);
+  background-color: var(--color-transparent);
   border: none; /*Por ser um botão por padrão vem com borda*/
   cursor: pointer;
 }
@@ -60,7 +61,7 @@
 /* Media Query para o menu responsivo */
 @media (max-width: 1440px) {
   .header__hamburger {
-    display: flex; /* Exibe o ícone do hambúrguer */
+    display: flex;
   }
 
   .header__nav-list {

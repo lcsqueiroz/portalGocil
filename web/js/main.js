@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const navList = document.querySelector(".header__nav-list");
 
   hamburger.addEventListener("click", () => {
-    // Alterna a classe 'active' no ícone do hambúrguer e na lista de navegação
+    // Alterna a classe active no ícone do hambúrguer e na lista de navegação
     hamburger.classList.toggle("active");
     navList.classList.toggle("active");
 
@@ -13,27 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // --- CAROUSEL LOGIC ---
-  const carousel = document.querySelector('.partners__carousel');
-  const track = document.querySelector('.partners__track');
+  const carousel = document.querySelector(".partners__carousel");
+  const track = document.querySelector(".partners__track");
 
   if (carousel && track) {
-    // 1. Duplicate items for a seamless loop
+    // 1. Duplicando items do carrossel (efeito de looping)
     const items = Array.from(track.children);
-    items.forEach(item => {
+    items.forEach((item) => {
       const clone = item.cloneNode(true);
       track.appendChild(clone);
-    });
-
-    // 2. Pause animation on container click, unless a link is clicked
-    carousel.addEventListener('click', (e) => {
-      // Check if the clicked element is one of the partner items (the <a> tag) or a child of it
-      if (e.target.closest('.partners__item')) {
-        // If it's a link, let the default navigation happen and don't pause
-        return;
-      }
-      
-      // If the click was on the container itself (not a link), toggle pause
-      track.classList.toggle('paused');
     });
   }
 });

@@ -10,7 +10,7 @@
   width: var(--card-width-service);
   border-radius: var(--border-radius-md);
   background-color: var(--color-background-card-services);
-  transition: background-color 0.7s ease;
+  transition: background-color var(--transition-duration-slow) ease;
 }
 
 .service-card:hover {
@@ -107,7 +107,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-lg);
-  transition: background-color 0.3s ease;
+  transition: background-color var(--transition-duration-normal) ease;
   padding: var(--spacing-lg);
 }
 
@@ -154,7 +154,8 @@
   display: block;
   font-weight: var(--font-weight-normal);
   box-shadow: var(--shadow-primary);
-  transition: transform 0.2s ease-in-out;
+  transition: transform var(--transition-duration-fast)
+    var(--transition-timing-function);
 }
 
 .system-card__button:hover {
@@ -195,11 +196,12 @@
   color: var(--color-text-title);
   box-shadow: var(--shadow-primary);
   font-weight: var(--font-weight-medium);
-  transition: transform 0.2s ease-in-out;
+  transition: transform var(--transition-duration-fast)
+    var(--transition-timing-function);
 }
 
 .ramal-card__button:hover {
-  transform: scale(1.02);
+  transform: var(--button-hover-animation-alt);
 }
 
 /* Card de Informações (Contato) */
