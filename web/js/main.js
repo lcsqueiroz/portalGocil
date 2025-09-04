@@ -23,5 +23,37 @@ document.addEventListener("DOMContentLoaded", () => {
       const clone = item.cloneNode(true);
       track.appendChild(clone);
     });
+
+    // 2. Lógica da Animação
+    let speed = 0.5; // Velocidade de rolagem normal
+    const slowSpeed = 0.25; // Velocidade de rolagem ao passar o mouse
+    let position = 0;
+
+    // A largura da track é calculada após a duplicação dos itens
+    const trackWidth = track.scrollWidth / 2;
+
+    function scrollAnimation() {
+      position -= speed;
+      // Quando a primeira metade da track sair da tela, reseta a posição
+      if (position < -trackWidth) {
+        position = 0;
+      }
+      track.style.transform = `translateX(${position}px)`;
+
+      // Continua a animação no próximo frame
+      requestAnimationFrame(scrollAnimation);
+    }
+
+    // Inicia a animação
+    scrollAnimation();
+
+    // 3. Altera a velocidade no hover
+    carousel.addEventListener("mouseenter", () => {
+      speed = slowSpeed;
+    });
+
+    carousel.addEventListener("mouseleave", () => {
+      speed = 0.5; // Retorna à velocidade normal
+    });
   }
 });
