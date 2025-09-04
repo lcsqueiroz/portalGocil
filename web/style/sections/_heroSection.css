@@ -1,14 +1,20 @@
 .hero {
-  /*background-image: url(../../assets/images/backgrounds/hero-background.png);*/
+  background-image: url(/web/assets/images/backgrounds/LockScreen.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: var(--spacing-5xl);
+  padding-bottom: var(--spacing-5xl);
+}
+.hero__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__container {
   display: flex;
   flex-direction: column;
-  padding-top: var(--spacing-5xl);
   gap: var(--spacing-xl);
 }
 

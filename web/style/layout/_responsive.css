@@ -57,6 +57,7 @@
     text-align: center;
     padding-bottom: var(--spacing-5xl);
   }
+
   .hero__actions {
     justify-content: center;
   }

@@ -13,7 +13,7 @@
   --color-text-footer: #bfbfbf; /* Cor de texto específica para o rodapé */
 
   /* Cores de Fundo */
-  --color-background-body: #003871; /* Cor de fundo principal da página */
+  --color-background-body: #001d3b; /* Cor de fundo principal da página */
   --color-background-header: #f5f6fa; /* Cor de fundo do header */
   --color-background-nav-hover: #fafdff; /* Cor do link da navegação no estado hover */
   --color-background-section-university: #001d3b; /* Fundo da seção Universidade */
@@ -51,6 +51,22 @@
     rgb(245, 246, 250) 0%,
     rgb(231, 233, 237) 100%
   );
+  --gradient-background-university: linear-gradient(
+    180deg,
+    rgb(1, 29, 59) 0%,
+    rgb(1, 29, 59) 100%
+  );
+  --gradient-background-systems: linear-gradient(
+    180deg,
+    rgb(1, 29, 59) 0%,
+    rgb(11, 17, 30) 100%
+  );
+  --gradient-background-contact: linear-gradient(
+    180deg,
+    rgb(11, 17, 30) 0%,
+    rgb(11, 10, 10) 100%
+  );
+
   --button-hover-animation: scale(1.01);
 
   /* Bordas */
@@ -69,6 +85,7 @@
   --font-size-hero: 9.375rem; /* 150px */
   --font-size-title: 5rem; /* 80px */
   --font-size-footer-title: 1.875rem; /* 30px */
+  --font-size-partners-item: 1.75rem; /*28px */
   --font-size-lg: 1.25rem; /* 20px */
   --font-size-md: 1rem; /* 16px */
   --font-size-sm: 0.875rem; /* 14px */

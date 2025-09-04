@@ -7,6 +7,7 @@
 @import url(components/_cards.css);
 @import url(layout/_grid.css);
 @import url(components/_tags.css);
+@import url(components/_carousel.css);
 
 @import url(layout/_header.css);
 @import url(sections/_heroSection.css);

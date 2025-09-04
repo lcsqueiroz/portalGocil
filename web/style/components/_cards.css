@@ -10,7 +10,7 @@
   width: var(--card-width-service);
   border-radius: var(--border-radius-md);
   background-color: var(--color-background-card-services);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.7s ease;
 }
 
 .service-card:hover {

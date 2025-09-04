@@ -4,7 +4,7 @@
   gap: var(--spacing-4xl);
   place-self: center;
   margin-top: var(--spacing-5xl);
-  margin-bottom: var(--spacing-5xl);
+  margin-bottom: var(--spacing-2xl);
 }
 
 .systems__grid {
