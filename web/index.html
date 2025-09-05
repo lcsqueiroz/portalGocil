@@ -25,6 +25,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="style/main.css">
+  <!-- ANIMAÇÃO (Show Items) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- JS -->
   <script defer src="js/main.js"></script>
 </head>
@@ -69,24 +71,24 @@
         </div>
       </div>
       <div class="hero__services-grid">
-        <article class="service-card" aria-labelledby="service-title-seguranca">
+        <article class="service-card" aria-labelledby="service-title-seguranca" data-aos="fade-up" data-aos-delay="100">
           <img class="service-card__icon" src="assets/images/icons/shield.svg" alt="" width="50" height="50">
           <h2 class="service-card__title" id="service-title-seguranca">Segurança</h2>
           <p class="service-card__description">Soluções completas em segurança patrimonial e pessoal.</p>
         </article>
-        <article class="service-card" aria-labelledby="service-title-multi">
+        <article class="service-card" aria-labelledby="service-title-multi" data-aos="fade-up" data-aos-delay="200">
           <img class="service-card__icon" src="assets/images/icons/multiservices.svg" alt="" width="50" height="50">
           <h2 class="service-card__title" id="service-title-multi">Multisserviços</h2>
           <p class="service-card__description">Ampla gama de serviços especializados.</p>
         </article>
-        <article class="service-card" aria-labelledby="service-title-tech">
+        <article class="service-card" aria-labelledby="service-title-tech" data-aos="fade-up" data-aos-delay="300">
           <img class="service-card__icon" src="assets/images/icons/technology.svg" alt="" width="50" height="50">
           <h2 class="service-card__title" id="service-title-tech">Tecnologia</h2>
           <p class="service-card__description">Sistemas integrados e modernos.</p>
         </article>
     </section>
 
-    <section class="partners">
+    <section class="partners" data-aos="fade-in">
       <h2 class="partners__title">Confira nossos parceiros</h2>
       <div class="partners__carousel max-content" id="partners-carousel">
         <div class="partners__track">
@@ -106,7 +108,7 @@
       </div>
     </section>
 
-    <section class="university" id="universidade" aria-labelledby="university-title">
+    <section class="university" id="universidade" aria-labelledby="university-title" data-aos="fade-up">
       <div class="university__container max-content">
         <div class="university__content">
           <h2 class="university__title" id="university-title">Universidade <span class="university__title--highlight">Corporativa</span></h2>
@@ -114,7 +116,7 @@
           <a href="#" class="button button--primary">Saiba mais</a>
         </div>
         <div class="university__course-deck">
-          <article class="course-card" aria-labelledby="course-title-1">
+          <article class="course-card" aria-labelledby="course-title-1" data-aos="fade-up" data-aos-delay="200">
             <header class="course-card__header">
               <div class="course-card__meta">
                 <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="" width="25" height="25">
@@ -134,7 +136,7 @@
               </div>
             </footer>
           </article>
-          <article class="course-card" aria-labelledby="course-title-2">
+          <article class="course-card" aria-labelledby="course-title-2" data-aos="fade-up" data-aos-delay="400">
             <header class="course-card__header">
               <div class="course-card__meta">
                 <img class="course-card__icon" src="assets/images/icons/paper.svg" alt="" width="25" height="25">
@@ -157,14 +159,14 @@
         </div>
       </div>
     </section>
-    <section class="systems" id="sistemas" aria-labelledby="systems-title">
+    <section class="systems" id="sistemas" aria-labelledby="systems-title" data-aos="fade-up">
       <div class="systems__container max-content">
         <header class="systems__header">
           <h2 class="systems__title" id="systems-title">Sistemas <span class="systems__title--highlight">Gocil</span></h2>
           <p class="systems__subtitle">Acesse nossos sistemas integrados para otimizar seu trabalho e aumentar a produtividade.</p>
         </header>
         <div class="systems__grid">
-          <article class="system-card" aria-labelledby="system-title-glpi">
+          <article class="system-card" aria-labelledby="system-title-glpi" data-aos="fade-up" data-aos-delay="100">
             <header class="system-card__header">
               <img src="assets/images/icons/glpi.svg" alt="" width="50" height="50">
               <div class="system-card__info">
@@ -174,7 +176,7 @@
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema MOVIDESK">Acessar Sistema</a>
           </article>
-          <article class="system-card" aria-labelledby="system-title-nexti">
+          <article class="system-card" aria-labelledby="system-title-nexti" data-aos="fade-up" data-aos-delay="200">
             <header class="system-card__header">
               <img src="assets/images/icons/nexti.svg" alt="" width="50" height="50">
               <div class="system-card__info">
@@ -184,7 +186,7 @@
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema NEXTI">Acessar Sistema</a>
           </article>
-          <article class="system-card" aria-labelledby="system-title-crm">
+          <article class="system-card" aria-labelledby="system-title-crm" data-aos="fade-up" data-aos-delay="300">
             <header class="system-card__header">
               <img src="assets/images/icons/crm.svg" alt="" width="50" height="50">
               <div class="system-card__info">
@@ -194,7 +196,7 @@
             </header>
             <a href="#" class="system-card__button" aria-label="Acessar o sistema CRM">Acessar Sistema</a>
           </article>
-          <article class="system-card" aria-labelledby="system-title-projuris">
+          <article class="system-card" aria-labelledby="system-title-projuris" data-aos="fade-up" data-aos-delay="400">
             <header class="system-card__header">
               <img src="assets/images/icons/projuris.svg" alt="" width="50" height="50">
               <div class="system-card__info">
@@ -207,19 +209,19 @@
         </div>
       </div>
     </section>
-    <section class="contact" id="contato" aria-labelledby="contact-title">
+    <section class="contact" id="contato" aria-labelledby="contact-title" data-aos="fade-up">
       <div class="contact__container max-content">
         <div class="contact__intro">
           <h2 class="contact__title" id="contact-title">Entre em <span class="contact__title--highlight">Contato</span></h2>
           <p class="contact__subtitle">Nossa equipe está sempre disponível para atendê-lo. Entre em contato através dos canais abaixo.</p>
-          <div class="ramal-card">
+          <div class="ramal-card" data-aos="fade-up" data-aos-delay="100">
             <h3 class="ramal-card__title">Listas de Ramais</h3>
             <p class="ramal-card__description">Acesse a Lista de ramais</p>
             <a href="#" class="ramal-card__button">Ver Lista de Ramais</a>
           </div>
         </div>
         <div class="contact__details">
-          <article class="info-card" aria-labelledby="info-title-location">
+          <article class="info-card" aria-labelledby="info-title-location" data-aos="fade-up" data-aos-delay="200">
             <header class="info-card__header">
               <img src="assets/images/icons/location.svg" alt="" width="25" height="25">
               <h3 class="info-card__title" id="info-title-location">Localização</h3>
@@ -230,7 +232,7 @@
               09520-100
             </address>
           </article>
-          <article class="info-card" aria-labelledby="info-title-hours">
+          <article class="info-card" aria-labelledby="info-title-hours" data-aos="fade-up" data-aos-delay="300">
             <header class="info-card__header">
               <img src="assets/images/icons/business-hours.svg" alt="" width="25" height="25">
               <h3 class="info-card__title" id="info-title-hours">Horário de Funcionamento</h3>
@@ -240,7 +242,7 @@
               <p><span class="info-card__content--highlight">Atendimento de emergência 24h</span></p>
             </div>
           </article>
-          <article class="info-card" aria-labelledby="info-title-general">
+          <article class="info-card" aria-labelledby="info-title-general" data-aos="fade-up" data-aos-delay="400">
             <header class="info-card__header">
               <h3 class="info-card__title" id="info-title-general">Informações Gerais</h3>
             </header>
@@ -259,7 +261,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" data-aos="fade-in">
     <div class="footer__container max-content">
       <div class="footer__branding">
         <div class="footer__logo">
@@ -306,6 +308,8 @@
       <p>Desenvolvido por Lucas Queiroz Vieira</p>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 </body>
 
 </html>

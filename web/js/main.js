@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Inicializa a biblioteca de animação AOS
+  AOS.init({
+    duration: 800, // Duração da animação em ms
+    once: true, // Animação acontece apenas uma vez
+    offset: 50, // Inicia a animação um pouco antes do elemento aparecer
+  });
   const hamburger = document.querySelector(".header__hamburger");
   const navList = document.querySelector(".header__nav-list");
 
