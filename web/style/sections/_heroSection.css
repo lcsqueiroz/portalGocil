@@ -6,6 +6,12 @@
   padding-top: var(--spacing-5xl);
   padding-bottom: var(--spacing-5xl);
 }
+
+.logo-background img {
+  max-width: 600px;
+  height: auto;
+  object-fit: contain;
+}
 .hero__container {
   display: flex;
   flex-direction: column;
