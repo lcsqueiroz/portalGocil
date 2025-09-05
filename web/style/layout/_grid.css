@@ -3,7 +3,6 @@
   grid-template-columns: repeat(2, 1fr);
   place-items: center;
   place-content: center;
-  gap: var(--spacing-sm);
 }
 .hero__services-grid {
   display: grid;

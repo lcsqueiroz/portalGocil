@@ -15,6 +15,12 @@
   }
 
   /* --- HERO SECTION --- */
+  .hero__container-grid {
+    display: block;
+  }
+  .logo-background img {
+    display: none;
+  }
   .hero__services-grid {
     gap: var(--spacing-2xl);
     margin: var(--spacing-2xl) 0;

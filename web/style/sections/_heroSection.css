@@ -10,7 +10,8 @@
 .logo-background img {
   max-width: 600px;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
+  display: inline-block;
 }
 .hero__container {
   display: flex;
